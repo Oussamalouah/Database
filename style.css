@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 500px 400px;
+    grid-template-areas: 
+     " . mid .";
+     
+    
+}
+
+.form {
+    display: grid;
+    width:40%;
+    grid-area:mid;
+    position: relative;
+    top:500px;
+    padding:40px;
+    left:300px;
+    
+    
+}
+#table{
+    display: grid;
+    grid-area:mid;
+    position: relative;
+    bottom: 200px;
+    padding: 0;
+    margin:0;
+}
+.form input{
+    height:30px;
+  
+}
+.button{
+    width:20%;
+    position: relative;
+    left:0px;
+
+}
+.edit{
+    display: grid;
+    width:100%;
+    grid-area:mid;
+    position: relative;
+    top:100px;
+    padding:40px;
+    left:20px;
+    
+}
+#update{
+    position: relative;
+    left: 220px;
+    width: 50%;
+}
+.upbtn{
+    text-decoration:solid;
+    border: solid blue;
+    background-color:blue;
+    border-radius:5px;
+    width:70px;
+    height: 35px;
+    }
+
+    img{
+        
+        position: relative;
+        top: 210px;
+        left:880px;
+        width: 70px;
+        height: 55px;
+    } #img_div:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .search{
+        
+        position: relative;
+        bottom:500px;
+        right: 330px;
+        
+    }
+    #searchInput{
+        width:300px;
+        
+    }
+    
+    .button {
+      appearance: button;
+      background-color: #464545;
+      border: solid transparent;
+      border-radius: 16px;
+      border-width: 0 0 4px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-block;
+      font-family: din-round,sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .8px;
+      line-height: 20px;
+      margin: 0;
+      outline: none;
+      overflow: visible;
+      padding: 13px 16px;
+      text-align: center;
+      text-transform: uppercase;
+      touch-action: manipulation;
+      transform: translateZ(0);
+      transition: filter .2s;
+      user-select: none;
+      -webkit-user-select: none;
+      vertical-align: middle;
+      white-space: nowrap;
+      width: 100%;
+    }
+    
+    .button:after {
+      background-clip: padding-box;
+      background-color: #000000;
+      border: solid transparent;
+      border-radius: 16px;
+      border-width: 0 0 4px;
+      bottom: -4px;
+      content: "";
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+    
+    .button:main,
+    .button:focus {
+      user-select: auto;
+    }
+    
+    .button:hover:not(:disabled) {
+      filter: brightness(1.1);
+    }
+    
+    .button:disabled {
+      cursor: auto;
+    }
